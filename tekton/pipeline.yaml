@@ -14,6 +14,8 @@ spec:
   params:
     - name: repo-url
     - name: branch
+    - name: build-image
+
       default: main
   tasks:
     - name: init
@@ -63,4 +65,5 @@ spec:
         value: "-v --with-spec --spec-color"
       runAfter:
         - clone
+    
 
